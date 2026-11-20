@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-20T16:20:26.973Z",
+  "updatedAt": "2026-11-20T16:50:26.274Z",
   "contract": "0x4de656203a7c533148fabf15ce77a558b8f3cb79",
-  "totalMinted": 305,
+  "totalMinted": 342,
   "minters": [
     {
       "owner": "0x16ac9ec281547c30c9c5f78c706060cf95f87ea4",
@@ -1222,6 +1222,154 @@
     {
       "owner": "0x0cfb990c48d99e80d48ba52500d8e8fa653c953c",
       "tokenId": 305
+    },
+    {
+      "owner": "0xa56cca91bf571ae3a9543b4c58c3f7041534aaff",
+      "tokenId": 306
+    },
+    {
+      "owner": "0x0b8a39984c683a4cbcd0f9dd72c73fdae8fec15a",
+      "tokenId": 307
+    },
+    {
+      "owner": "0x946140472de620042f824989c4e53453e045dc02",
+      "tokenId": 308
+    },
+    {
+      "owner": "0x1c01bccf830219f2c837b6b35dd4d3a3e748114d",
+      "tokenId": 309
+    },
+    {
+      "owner": "0xdc692d2a43de722162b2872ee7e1781e138e818f",
+      "tokenId": 310
+    },
+    {
+      "owner": "0x163aca94b3585786ac3055649fd57c4aef08b956",
+      "tokenId": 311
+    },
+    {
+      "owner": "0x78e7a2c6d4d33196e5880f1fa6bf4a35816d1548",
+      "tokenId": 312
+    },
+    {
+      "owner": "0x6032ac7cec4f1c73014534b441368f8eb357600b",
+      "tokenId": 313
+    },
+    {
+      "owner": "0x86aeb88c2e279c0b5ef80dd2081b9374267d84fa",
+      "tokenId": 314
+    },
+    {
+      "owner": "0x80f4743a756d5b29a87b9676913d84c92cd76b11",
+      "tokenId": 315
+    },
+    {
+      "owner": "0xd53d3e7c8dc681df32be753b113961a87170568e",
+      "tokenId": 316
+    },
+    {
+      "owner": "0x80a0225df18b1219ffb909e030585569627679bb",
+      "tokenId": 317
+    },
+    {
+      "owner": "0x2b2c8cc29f471327e839e59653e3165ea5b22c45",
+      "tokenId": 318
+    },
+    {
+      "owner": "0x54e8e98d4c1a1b796511569d2d075857e6fc611c",
+      "tokenId": 319
+    },
+    {
+      "owner": "0x318a538edfcb5f1e7b3e69f21326259ec4d05366",
+      "tokenId": 320
+    },
+    {
+      "owner": "0x8d073a3ff12bf764ae6ee6ba4c87987c82967b25",
+      "tokenId": 321
+    },
+    {
+      "owner": "0x1f2fb95c1ff8bcb7244e933700f3ed615543f726",
+      "tokenId": 322
+    },
+    {
+      "owner": "0x829b8107c77bb394b575a3ed69949cb2890ed6f3",
+      "tokenId": 323
+    },
+    {
+      "owner": "0xe6f4039e129a3d554b0117a68190fc2f19fbfff2",
+      "tokenId": 324
+    },
+    {
+      "owner": "0x2b0ce8486bcb8bc6cd654eaf8f0edb3d70412bb7",
+      "tokenId": 325
+    },
+    {
+      "owner": "0xd636187c2531227a78d6d46d6dea1a349ed383e9",
+      "tokenId": 326
+    },
+    {
+      "owner": "0x06b530c5bddc974615b275b325d4de38d79c4d68",
+      "tokenId": 327
+    },
+    {
+      "owner": "0x1849a1c34f16adacfba7d5188eb75d6b0ef4e1b4",
+      "tokenId": 328
+    },
+    {
+      "owner": "0x26a7c4ab26a3ee2709390ad4158758d2c1164f7a",
+      "tokenId": 329
+    },
+    {
+      "owner": "0x8909caee68c4efcceb19e6916478985ba06f23d8",
+      "tokenId": 330
+    },
+    {
+      "owner": "0x928775ab0a5cc01db4cee217f27e987d69e2a087",
+      "tokenId": 331
+    },
+    {
+      "owner": "0x82fe3144e6810529650010985ac4032249b09e24",
+      "tokenId": 332
+    },
+    {
+      "owner": "0x85e0525affeb4756ca9f507ee517978f5afe3af8",
+      "tokenId": 333
+    },
+    {
+      "owner": "0x2c0898fd2a427c42576d729fb07be7617c651f2b",
+      "tokenId": 334
+    },
+    {
+      "owner": "0x5180bb1150a69553d9922345cb2b41dfa7fe9b81",
+      "tokenId": 335
+    },
+    {
+      "owner": "0x9011faac8ed0b505153d500dde7fbd421327fe86",
+      "tokenId": 336
+    },
+    {
+      "owner": "0x9394404bdb4c536b2b0cbe91e1fffa0b598912ca",
+      "tokenId": 337
+    },
+    {
+      "owner": "0x06e2e85c0baa254d6970c476d90cb177288c7fa3",
+      "tokenId": 338
+    },
+    {
+      "owner": "0x1d9ba3e69ed0f548d544792419c743a556d3a29a",
+      "tokenId": 339
+    },
+    {
+      "owner": "0x7f393c7c6fab23cc0b84aa6ad5e5b8a832228edc",
+      "tokenId": 340
+    },
+    {
+      "owner": "0x7136abde1976fb04612e710658be5c657a24d7a1",
+      "tokenId": 341
+    },
+    {
+      "owner": "0xdac4b81f0be13634dd40122aedcfeab87b1b6942",
+      "tokenId": 342
     }
   ],
   "streaks": [
