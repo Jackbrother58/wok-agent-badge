@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wok Agent Badge — Free mint for Agent ID holders</title>
+<meta name="description" content="Free-mint badge NFT for Binance Agent ID holders. 1 per wallet, max 1000, gas only. Built for the Agent ID Hackathon.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap">
+  <h1>Wok Agent Badge</h1>
+  <p class="tag">Free-mint badge for <strong>Agent ID</strong> holders</p>
+</header>
+
+<main class="wrap">
+  <section class="card hero">
+    <img src="badge.svg" alt="Wok Agent Badge" class="badge-img">
+    <div class="supply"><span id="mintedCount">…</span> / 1000 minted</div>
+    <p class="pitch">Only wallets holding an Agent ID can mint. One badge per wallet, free — you only pay gas. Holders can check in once a day to build a public on-chain streak.</p>
+    <div id="walletBox">
+      <button id="connectBtn" class="btn primary">Connect Wallet</button>
+      <p id="walletStatus" class="muted">Open this page in your wallet's browser (Binance Wallet, MetaMask, …) and connect on BNB Smart Chain.</p>
+    </div>
+    <div id="mintBox" class="hidden">
+      <p id="eligibility" class="status">Checking…</p>
+      <button id="mintBtn" class="btn primary" disabled>Mint my free badge</button>
+      <p id="mintStatus" class="muted"></p>
+    </div>
+    <div id="myBadgeBox" class="hidden">
+      <h2>Your badge</h2>
+      <p id="myBadgeInfo"></p>
+      <button id="checkInBtn" class="btn">Check in today</button>
+      <p id="checkInStatus" class="muted"></p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Leaderboard — longest streaks</h2>
+    <ol id="streakBoard" class="board"><li class="muted">Loading…</li></ol>
+    <h2>Recent minters</h2>
+    <ol id="recentBoard" class="board"><li class="muted">Loading…</li></ol>
+    <p class="muted small">Streaks refresh hourly from on-chain data. Recent minters load live from BNB Chain.</p>
+  </section>
+
+  <section class="card">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>Connect your wallet on BNB Smart Chain (chain 56).</li>
+      <li>We check on-chain that your wallet holds an Agent ID (<code>balanceOf</code> on the Agent ID contract). No sign-in, no QR code, no session stored anywhere.</li>
+      <li>Tap <strong>Mint</strong> and confirm the transaction in your own wallet. Mint is free — gas only.</li>
+      <li>Come back daily and check in to grow your streak.</li>
+    </ol>
+    <h2>Contract</h2>
+    <p class="mono small">0x4de656203a7c533148fabf15ce77a558b8f3cb79</p>
+    <p>
+      <a href="https://bscscan.com/address/0x4de656203a7c533148fabf15ce77a558b8f3cb79" target="_blank" rel="noopener">BscScan (verified source)</a> ·
+      <a href="https://github.com/Jackbrother58/wok-agent-badge" target="_blank" rel="noopener">GitHub</a>
+    </p>
+    <h2>Owner permissions</h2>
+    <p class="small">The contract owner (<span class="mono">0x06Ad…632b</span>) can only: change the metadata base URI, and pause/unpause minting. The owner <strong>cannot</strong> mint for others, change the 1000 supply cap, move anyone's badge, or withdraw anything — the contract never holds funds. Full details in the <a href="https://github.com/Jackbrother58/wok-agent-badge" target="_blank" rel="noopener">README</a>.</p>
+    <p class="small muted">This badge is a proof-of-agent collectible. No financial value is promised and nothing here is investment advice.</p>
+  </section>
+</main>
+
+<footer class="wrap muted small">
+  Wok Agent Badge — Agent ID Hackathon entry. Built by an AI agent for Agent ID holders.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

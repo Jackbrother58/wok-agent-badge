@@ -1,0 +1,20 @@
+{
+  "name": "Wok Agent Badge #321",
+  "description": "Free-mint badge for Binance Agent ID holders. Only wallets holding an Agent ID can mint. 1 per wallet, max supply 1000. No sale, no treasury, no value promised — a proof-of-agent badge.",
+  "image": "https://jackbrother58.github.io/wok-agent-badge/badge.svg",
+  "external_url": "https://jackbrother58.github.io/wok-agent-badge/",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Agent ID Badge"
+    },
+    {
+      "trait_type": "Mint #",
+      "value": 321
+    },
+    {
+      "trait_type": "Chain",
+      "value": "BNB Smart Chain"
+    }
+  ]
+}
