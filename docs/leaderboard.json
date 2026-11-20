@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-20T13:12:56.819Z",
+  "updatedAt": "2026-11-20T13:20:00.217Z",
   "contract": "0x4de656203a7c533148fabf15ce77a558b8f3cb79",
-  "totalMinted": 7,
+  "totalMinted": 26,
   "minters": [
     {
       "owner": "0x16ac9ec281547c30c9c5f78c706060cf95f87ea4",
@@ -30,6 +30,82 @@
     {
       "owner": "0xd944bddf954d0c26b32005a5d723948fad37007a",
       "tokenId": 7
+    },
+    {
+      "owner": "0xc0938b7844ee6c184876681693686b7a4d33ccae",
+      "tokenId": 8
+    },
+    {
+      "owner": "0x35056e6da2b27bcedbe34539efad66bc1f5fa100",
+      "tokenId": 9
+    },
+    {
+      "owner": "0x9cb87807c0eb07ae2f2376e8bb4a2d92cdb366b9",
+      "tokenId": 10
+    },
+    {
+      "owner": "0x7e81ef37b2a16657a67fb29493d4f219e775d74c",
+      "tokenId": 11
+    },
+    {
+      "owner": "0xce34b5257b6e2174a1e1ca219d0c0f3175e6532f",
+      "tokenId": 12
+    },
+    {
+      "owner": "0xfcc6573084a4e059cec1ca47a7b7ecd3d998b81c",
+      "tokenId": 13
+    },
+    {
+      "owner": "0x3130313d23e4ceb53e111dfb65d568ada79b3f00",
+      "tokenId": 14
+    },
+    {
+      "owner": "0xdb5d735ca8f5285d8c28d51a71c8bec05b222fc3",
+      "tokenId": 15
+    },
+    {
+      "owner": "0xa974e1ea5ffb85eddaa81eb33bfec2e3396e1330",
+      "tokenId": 16
+    },
+    {
+      "owner": "0xc855c1bf0b2a7b75112c2f60787757ce82846a3a",
+      "tokenId": 17
+    },
+    {
+      "owner": "0xb322d9acb2d393e33d728a95d9d33af3761c78e6",
+      "tokenId": 18
+    },
+    {
+      "owner": "0xa20fb499dee4815d43665202f6729c69477ecc91",
+      "tokenId": 19
+    },
+    {
+      "owner": "0x2d4f0cd7f4cb32e6813eb290d20455e15fc7b953",
+      "tokenId": 20
+    },
+    {
+      "owner": "0x3ace3160faa4aa2cf4bd920097a13d9ae26609f3",
+      "tokenId": 21
+    },
+    {
+      "owner": "0xf008eddbfc6871a2b82d5b2bd50164de7dba7c98",
+      "tokenId": 22
+    },
+    {
+      "owner": "0x0a20797e4b059ed4171f4aba49daf8ecea86e240",
+      "tokenId": 23
+    },
+    {
+      "owner": "0xe6fb57b0459b9ba51cc6f46a08acabaab5ee5476",
+      "tokenId": 24
+    },
+    {
+      "owner": "0x810cd0ccff0a992f4b0e74c9890a9faa38c0e20a",
+      "tokenId": 25
+    },
+    {
+      "owner": "0xeedd07b40d7683344a65c5eb457ae44a98e41ad5",
+      "tokenId": 26
     }
   ],
   "streaks": []
