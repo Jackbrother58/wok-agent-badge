@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-20T18:50:21.467Z",
+  "updatedAt": "2026-11-20T19:20:26.499Z",
   "contract": "0x4de656203a7c533148fabf15ce77a558b8f3cb79",
-  "totalMinted": 374,
+  "totalMinted": 379,
   "minters": [
     {
       "owner": "0x16ac9ec281547c30c9c5f78c706060cf95f87ea4",
@@ -1498,6 +1498,26 @@
     {
       "owner": "0x8f91643de74f0ee0e7f3856d84854291d2ef4209",
       "tokenId": 374
+    },
+    {
+      "owner": "0x5a3d663ddb62d74332af04e5b326d17b7d129842",
+      "tokenId": 375
+    },
+    {
+      "owner": "0x7203070095d27a3048f97607eb40a55be51d3214",
+      "tokenId": 376
+    },
+    {
+      "owner": "0x2409e43948089adc29aba5ffa1a0336e1029639c",
+      "tokenId": 377
+    },
+    {
+      "owner": "0x2ed5435631db1fba3cf2630ce6aebb89b22e0009",
+      "tokenId": 378
+    },
+    {
+      "owner": "0x158aea3529dc439629610f4b5db56d65f7fd1740",
+      "tokenId": 379
     }
   ],
   "streaks": [
