@@ -5,13 +5,16 @@
 
   var CONTRACT = '0x4de656203a7c533148fabf15ce77a558b8f3cb79';
   var AGENT_ID = '0x60b9262456de011f7d15a54cdd8c48baaa8b022f';
-  var DEPLOY_BLOCK = 134698554;
   var RPCS = [
+    'https://bsc-dataseed.binance.org',
     'https://bsc-dataseed1.bnbchain.org',
+    'https://bsc-dataseed2.bnbchain.org',
+    'https://bsc-dataseed3.bnbchain.org',
+    'https://bsc-dataseed4.bnbchain.org',
     'https://bsc.publicnode.com',
     'https://bsc-dataseed1.defibit.io',
+    'https://bsc-dataseed.nariox.org',
   ];
-  var TRANSFER_TOPIC = '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef';
   var SEL = {
     totalMinted: '0xa2309ff8',
     balanceOf: '0x70a08231',
@@ -86,34 +89,53 @@
   }
 
   function refreshRecent() {
-    var from = '0x' + DEPLOY_BLOCK.toString(16);
-    rpc('eth_getLogs', [{ fromBlock: from, toBlock: 'latest', address: CONTRACT, topics: [TRANSFER_TOPIC, '0x0000000000000000000000000000000000000000000000000000000000000000'] }])
-      .then(function (logs) {
-        var el = $('recentBoard');
-        el.innerHTML = '';
-        if (!logs || !logs.length) {
-          el.innerHTML = '<li class="muted">No mints yet — be the first.</li>';
-          return;
-        }
-        logs.slice(-20).reverse().forEach(function (log) {
-          var to = '0x' + log.topics[2].slice(26);
-          var tokenId = parseInt(log.topics[3], 16);
-          var li = document.createElement('li');
-          li.textContent = shortAddr(to) + '  ·  badge #' + tokenId;
-          el.appendChild(li);
-        });
-      }).catch(function () {
-        $('recentBoard').innerHTML = '<li class="muted">Could not load recent minters.</li>';
+    // Renders from leaderboard.json (precomputed on-chain by the cron).
+    // No eth_getLogs: public BSC RPCs rate-limit it (-32005) and the file
+    // already carries the same minters list.
+    fetch('leaderboard.json').then(function (r) { return r.json(); }).then(function (d) {
+      var el = $('recentBoard');
+      el.innerHTML = '';
+      if (!d.minters || !d.minters.length) {
+        el.innerHTML = '<li class="muted">No mints yet — be the first.</li>';
+        return;
+      }
+      d.minters.slice(-20).reverse().forEach(function (m) {
+        var li = document.createElement('li');
+        li.textContent = shortAddr(m.owner) + '  ·  badge #' + m.tokenId;
+        el.appendChild(li);
       });
+    }).catch(function () {
+      $('recentBoard').innerHTML = '<li class="muted">Could not load recent minters.</li>';
+    });
   }
 
   function findMyToken() {
-    var topicTo = pad32(user);
-    return rpc('eth_getLogs', [{ fromBlock: '0x' + DEPLOY_BLOCK.toString(16), toBlock: 'latest', address: CONTRACT, topics: [TRANSFER_TOPIC, '0x0000000000000000000000000000000000000000000000000000000000000000', topicTo] }])
-      .then(function (logs) {
-        if (logs && logs.length) return parseInt(logs[0].topics[3], 16);
-        return null;
-      }).catch(function () { return null; });
+    // Log-free lookup: scan ownerOf(tokenId) from the newest token down.
+    // Public RPCs rate-limit eth_getLogs, so the site never calls it.
+    return ethCall(CONTRACT, SEL.totalMinted).then(function (r) {
+      var total = parseUint(r);
+      var ids = [];
+      for (var i = total; i >= 1; i--) ids.push(i);
+      var chain = Promise.resolve(null);
+      for (var c = 0; c < ids.length; c += 10) {
+        (function (chunk) {
+          chain = chain.then(function (found) {
+            if (found !== null) return found;
+            return Promise.all(chunk.map(function (id) {
+              return ethCall(CONTRACT, SEL.ownerOf + pad32(toHex(id)).slice(2)).then(function (o) {
+                return { id: id, owner: ('0x' + o.slice(26)).toLowerCase() };
+              }).catch(function () { return null; });
+            })).then(function (res) {
+              for (var k = 0; k < res.length; k++) {
+                if (res[k] && res[k].owner === user.toLowerCase()) return res[k].id;
+              }
+              return null;
+            });
+          });
+        })(ids.slice(c, c + 10));
+      }
+      return chain;
+    }).catch(function () { return null; });
   }
 
   function refreshEligibility() {
