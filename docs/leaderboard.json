@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-20T13:52:11.238Z",
+  "updatedAt": "2026-11-20T14:20:30.150Z",
   "contract": "0x4de656203a7c533148fabf15ce77a558b8f3cb79",
-  "totalMinted": 225,
+  "totalMinted": 277,
   "minters": [
     {
       "owner": "0x16ac9ec281547c30c9c5f78c706060cf95f87ea4",
@@ -902,12 +902,225 @@
     {
       "owner": "0xf8f3ed93f9fb9bb4fde59953f615feb9530569a2",
       "tokenId": 225
+    },
+    {
+      "owner": "0x2205bfa952f4e0b9e8858ff8d56e5a7b3b483793",
+      "tokenId": 226
+    },
+    {
+      "owner": "0x548c27d2ad45e23af63452a55d5c490766f5f9d4",
+      "tokenId": 227
+    },
+    {
+      "owner": "0xc6cd3c29caa1e2356367c28a903494af6eff043a",
+      "tokenId": 228
+    },
+    {
+      "owner": "0xaf190847cae433b26cc34c6935109ba6e134d047",
+      "tokenId": 229
+    },
+    {
+      "owner": "0x7c87f1a9e539dc79e1354121a64b8cf31d04cb4e",
+      "tokenId": 230
+    },
+    {
+      "owner": "0xce9aceda96dacc0061a5cea41d55be4312265620",
+      "tokenId": 231
+    },
+    {
+      "owner": "0x66d4212e3e7852ed2e72ec82c585ea4e67ae0792",
+      "tokenId": 232
+    },
+    {
+      "owner": "0x5170e8bbbe02427dbe8421723664432ae58a515f",
+      "tokenId": 233
+    },
+    {
+      "owner": "0x695d9d172448b6851f47ea9bf56c8f4be4b8ed46",
+      "tokenId": 234
+    },
+    {
+      "owner": "0x0fbabc8da8ce7c1351d1d46e602e31a9af188125",
+      "tokenId": 235
+    },
+    {
+      "owner": "0x4dd17ff0cf28aca284f72daf1d12e79f67703a98",
+      "tokenId": 236
+    },
+    {
+      "owner": "0x2f474e2f9f5fc7ee8bc3a134e3004945d06e3a7b",
+      "tokenId": 237
+    },
+    {
+      "owner": "0x1b9cb60d17f6b45d58c265045591c5307a61556c",
+      "tokenId": 238
+    },
+    {
+      "owner": "0x1001a4c84fab97427b9a1038dc2e7f3d515622e5",
+      "tokenId": 239
+    },
+    {
+      "owner": "0x2adb533af54c910a3e3c99aca1a5963135fd8154",
+      "tokenId": 240
+    },
+    {
+      "owner": "0x9b36d07333a930c60cae1eef6e818dcd70715328",
+      "tokenId": 241
+    },
+    {
+      "owner": "0xfdd43c0141a9d17061f07a778cbeaed38812f81e",
+      "tokenId": 242
+    },
+    {
+      "owner": "0x13bb0d089275453865e4a236f04ca9762fe3240e",
+      "tokenId": 243
+    },
+    {
+      "owner": "0x178242000e0f5ff3149b3f5830b04921a9ceaf54",
+      "tokenId": 244
+    },
+    {
+      "owner": "0xe3c5d9942ed3cde72c85526fd6f13cd05dd4db06",
+      "tokenId": 245
+    },
+    {
+      "owner": "0x439ad6a5cd838f60931cf8aa734446dc3cb8517c",
+      "tokenId": 246
+    },
+    {
+      "owner": "0x5ac28eef3f4d6e01f2703576c7e98fe66b4cde61",
+      "tokenId": 247
+    },
+    {
+      "owner": "0x90a55b663170557b73fafab572a46d7e0230df18",
+      "tokenId": 248
+    },
+    {
+      "owner": "0x1bc81b8ee0cca00cf765941b4eda711389bf731c",
+      "tokenId": 249
+    },
+    {
+      "owner": "0x5fe1d38d7f17233dfdc1352f27d9f1ee92d69014",
+      "tokenId": 250
+    },
+    {
+      "owner": "0x8c0bb9f2d6cf75ce4be061c410119933a31963e0",
+      "tokenId": 251
+    },
+    {
+      "owner": "0xe85f293e1bca4582a980506dec6363284af1f881",
+      "tokenId": 252
+    },
+    {
+      "owner": "0x67d16b3e18668ec0239fbd6f97012bb3fa8858d6",
+      "tokenId": 253
+    },
+    {
+      "owner": "0x2c9f064147be4d486fdcb3f08ddea689262a03a0",
+      "tokenId": 254
+    },
+    {
+      "owner": "0x9a3b605be1aab6fe819085dfece5f00f3df4d532",
+      "tokenId": 255
+    },
+    {
+      "owner": "0x3d30a8695dfcfbf37a13fd5f8f30c50d0c21ba35",
+      "tokenId": 256
+    },
+    {
+      "owner": "0xb0a4418fc906533f58058748e8f73fe8a36b4585",
+      "tokenId": 257
+    },
+    {
+      "owner": "0x7e81e645cf63d44e786b7bb8d7cdbb1de3477659",
+      "tokenId": 258
+    },
+    {
+      "owner": "0x858a00abf1c45aee90490cccecb3e7c7899bd82e",
+      "tokenId": 259
+    },
+    {
+      "owner": "0x9ce778a6a32b22d03cdc3e797ee0ece2dd8ebeb5",
+      "tokenId": 260
+    },
+    {
+      "owner": "0xe35a67bc4f3812540f11d5528a31f9a27bce6a22",
+      "tokenId": 261
+    },
+    {
+      "owner": "0x57e7aa43e1441a9a0b95b2dbe599398e73224418",
+      "tokenId": 262
+    },
+    {
+      "owner": "0x3ffcaf6c3bdd9556800735acaa1ad9acd41462db",
+      "tokenId": 263
+    },
+    {
+      "owner": "0x39782dc7ca88c5b809dbe986bf3014cc06ec29a8",
+      "tokenId": 264
+    },
+    {
+      "owner": "0x41f2a863b1aac12e5928ead62785e9793fb7aa6d",
+      "tokenId": 265
+    },
+    {
+      "owner": "0x491a11c79bd7d32243364e9c5c0e26e9b3b74c89",
+      "tokenId": 266
+    },
+    {
+      "owner": "0x626515f6d36d9184221d392d7835cababf115901",
+      "tokenId": 267
+    },
+    {
+      "owner": "0x978d78f1ec8c18d24f902ffb7efd8a176377f6ff",
+      "tokenId": 268
+    },
+    {
+      "owner": "0xb510a188d9efa8ce7c47776e4414037555cecde5",
+      "tokenId": 269
+    },
+    {
+      "owner": "0x1d71b1e05389e089b105f50455d30d5a0bc98da9",
+      "tokenId": 270
+    },
+    {
+      "owner": "0xe8a807b8c4dbe9268c5e88c4382b6db91d8a7300",
+      "tokenId": 271
+    },
+    {
+      "owner": "0x907c7fc4537757e4c6558ed9eacf2c691139bd6d",
+      "tokenId": 272
+    },
+    {
+      "owner": "0x10d0f45499ef8304ebf5c4ac3421684a00fb5980",
+      "tokenId": 273
+    },
+    {
+      "owner": "0xa70ce7af7595a5930e8cc08e289743facc0c6b0f",
+      "tokenId": 274
+    },
+    {
+      "owner": "0x1e1d8cb10265928667ed4de2caa279fca965a0c4",
+      "tokenId": 275
+    },
+    {
+      "owner": "0xfe6b354cadf60b03fddb594ad70d02cc9da6ef7e",
+      "tokenId": 276
+    },
+    {
+      "owner": "0x35a822c73406b5a9e6eeca6432072b2310efbeec",
+      "tokenId": 277
     }
   ],
   "streaks": [
     {
       "tokenId": 58,
       "owner": "0x661101ee3e76376c69d984d7f4b291631f6803c5",
+      "streak": 1
+    },
+    {
+      "tokenId": 180,
+      "owner": "0xe94a074631ebbccc85976dd6501be79d0b307c3d",
       "streak": 1
     },
     {
@@ -918,6 +1131,21 @@
     {
       "tokenId": 183,
       "owner": "0xd666434d0d9a8d3ba801522693afc3a467e5dcf9",
+      "streak": 1
+    },
+    {
+      "tokenId": 213,
+      "owner": "0x6bf890b53588af44d7962e50432f4612d2aeb7c3",
+      "streak": 1
+    },
+    {
+      "tokenId": 240,
+      "owner": "0x2adb533af54c910a3e3c99aca1a5963135fd8154",
+      "streak": 1
+    },
+    {
+      "tokenId": 248,
+      "owner": "0x90a55b663170557b73fafab572a46d7e0230df18",
       "streak": 1
     }
   ]
